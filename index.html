@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRASILIDADES</title>
+
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body class="0">
+    <section class="content" role="region" aria-label="Seção principal sobre culinária brasileira">
+    <div class="container" role="region" aria-label="Carrossel de imagens de comidas brasileiras">
+        <div class="back" aria-hidden="true"></div>
+        <div class="ball" aria-hidden="true"></div>
+        <div class="ball2" aria-hidden="true"></div>
+
+        <div class="cont-img" role="img" aria-label="Imagem ilustrando prato típico brasileiro">
+            <img src="" alt="" class="img_container">
+        </div>
+
+        <div class="cont-info" role="group" aria-label="Informações do carrossel e controles de navegação">
+            <h1 tabindex="0">Lorem Epsum it</h1>
+
+            <div class="buttons" role="group" aria-label="Botões de navegação do carrossel">
+                <button class="but" aria-label="Imagem anterior">&#60</button>
+                <button class="but" aria-label="Próxima imagem">&#62</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="types" role="region" aria-label="Categorias de comidas brasileiras">
+        <button class="card_type" onclick="seletor(1)" role="button" tabindex="0" aria-label="Selecionar categoria pratos principais">
+            <div class="card_img_div" role="img" aria-label="Imagem de prato principal brasileiro">
+                <img src="img/feijoada_types.png" alt="" class="card_img">
+            </div>
+            <p>PRINCIPAL</p>
+        </button>
+
+        <button class="card_type" onclick="seletor(2)" role="button" tabindex="0" aria-label="Selecionar categoria lanches">
+            <div class="card_img_div" role="img" aria-label="Imagem de lanche típico brasileiro">
+                <img src="img/coxinha_types.png" alt="" class="card_img">
+            </div>
+            <p>LANCHES</p>
+        </button>
+
+        <button class="card_type" onclick="seletor(3)" role="button" tabindex="0" aria-label="Selecionar categoria bebidas">
+            <div class="card_img_div" role="img" aria-label="Imagem de bebida típica brasileira">
+                <img src="img/cana_types.png" alt="" class="card_img">
+            </div>
+            <p>BEBIDAS</p>
+        </button>
+
+        <button class="card_type" onclick="seletor(4)" role="button" tabindex="0" aria-label="Selecionar categoria sobremesas">
+            <div class="card_img_div" role="img" aria-label="Imagem de sobremesa brasileira">
+                <img src="img/acai_types.png" alt="" class="card_img">
+            </div>
+            <p>SOBREMESA</p>
+        </button>
+
+        <button class="card_type" onclick="seletor(5)" role="button" tabindex="0" aria-label="Selecionar categoria frutas">
+            <div class="card_img_div" role="img" aria-label="Imagem de fruta típica brasileira">
+                <img src="img/caju_types.png" alt="" class="card_img">
+            </div>
+            <p>FRUTAS</p>
+        </button>
+    </div>
+
+    <div class="mini-container" role="region" aria-label="Imagens complementares de comidas brasileiras">
+        <div class="mini_1" role="img" tabindex="0" aria-label="Imagem adicional de prato brasileiro">
+            <div class="back2" aria-hidden="true"></div>
+            <div class="ball3" aria-hidden="true"></div>
+            <img src="" alt="">
+        </div>
+        <div class="mini_2" role="img" tabindex="0" aria-label="Imagem adicional de bebida brasileira">
+            <div class="back2" aria-hidden="true"></div>
+            <div class="ball4" aria-hidden="true"></div>
+            <img src="" alt="">
+        </div>
+    </div>
+
+    <div class="foods" role="region" aria-label="Lista de comidas exibidas conforme a categoria selecionada">
+    </div>
+</section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const alimentosCarrossel = [
+                {
+                    "nome": "Brigadeiro",
+                    "titulo": "Clássico das Festas",
+                    "img": "img/brigadeiro_container.png",
+                    "corPrincipal": "#8B4513",
+                    "corSecundaria": "#D2B48C",
+                    "top": '-45px',
+                    "left": '-25px',
+                    "bottom": '-50px',
+                    "bottom3": '230px',
+                    "bottom2": '150px',
+                    "right": '-60px'
+                },
+                {
+                    "nome": "Pão de Queijo",
+                    "titulo": "Sabor Mineiro",
+                    "img": "img/pao_de_queijo_container.png",
+                    "corPrincipal": "#DAA520",
+                    "corSecundaria": "#FFFFE0",
+                    "top": '45px',
+                    "left": '25px',
+                    "bottom": '50px',
+                    "bottom2": '230px',
+                    "bottom3": '150px',
+                    "right": '60px'
+                },
+                {
+                    "nome": "Acarajé",
+                    "titulo": "O Axé da Bahia",
+                    "img": "img/acaraje_container.png",
+                    "corPrincipal": "#FF4500",
+                    "corSecundaria": "#FFD700",
+                    "top": '-25px',
+                    "left": '-55px',
+                    "bottom": '-57px',
+                    "bottom3": '230px',
+                    "bottom2": '150px',
+                    "right": '-90px'
+                },
+                {
+                    "nome": "Goiabada",
+                    "titulo": "Doçura em Barra",
+                    "img": "img/goiabada_container.png",
+                    "corPrincipal": "#DC143C",
+                    "corSecundaria": "#F08080",
+                    "top": '-70px',
+                    "left": '500px',
+                    "bottom": '-55px',
+                    "bottom2": '230px',
+                    "bottom3": '150px',
+                    "right": '550px'
+                }
+            ];
+
+            let indiceAtual = 0;
+            const totalSlides = alimentosCarrossel.length;
+
+            const container = document.querySelector('.container');
+            const back = document.querySelector('.back');
+            const contImg = document.querySelector('.cont-img');
+            const img = document.querySelector('.img_container');
+            const ball = document.querySelector('.ball');
+            const ball2 = document.querySelector('.ball2');
+            const ball3 = document.querySelector('.ball3');
+            const ball4 = document.querySelector('.ball4');
+            const h1Titulo = container.querySelector('h1');
+
+            let pAlimento = container.querySelector('.nome-alimento');
+            if (!pAlimento) {
+                pAlimento = document.createElement('p');
+                pAlimento.classList.add('nome-alimento');
+                pAlimento.style.fontSize = '1.2em';
+                pAlimento.style.fontWeight = 'bold';
+
+                h1Titulo.insertAdjacentElement('afterend', pAlimento);
+            }
+
+            const [butPrev, butNext] = document.querySelectorAll('.but');
+
+            function atualizarCarrossel() {
+                const item = alimentosCarrossel[indiceAtual];
+
+                h1Titulo.textContent = item.nome;
+                pAlimento.textContent = item.titulo;
+
+                container.style.backgroundColor = item.corPrincipal;
+                back.style.backgroundColor = item.corPrincipal;
+
+                img.setAttribute('src', item.img)
+                img.setAttribute('alt', `imagem de ${item.nome}`)
+
+                contImg.style.backgroundColor = item.corSecundaria;
+                ball.style.backgroundColor = item.corSecundaria;
+                ball2.style.backgroundColor = item.corSecundaria;
+
+                ball2.style.top = item.top;
+                ball2.style.left = item.left;
+                ball.style.right = item.right;
+                ball.style.bottom = item.bottom;
+
+                ball3.style.bottom = item.bottom2;
+                ball4.style.bottom = item.bottom3;
+            }
+
+            butPrev.addEventListener('click', () => {
+                indiceAtual = (indiceAtual - 1 + totalSlides) % totalSlides;
+                atualizarCarrossel();
+            });
+
+            butNext.addEventListener('click', () => {
+                indiceAtual = (indiceAtual + 1) % totalSlides;
+                atualizarCarrossel();
+            });
+
+            function proximoSlide() {
+                indiceAtual = (indiceAtual + 1) % totalSlides;
+                atualizarCarrossel();
+            }
+            const intervaloCarrossel = setInterval(proximoSlide, 5000);
+
+            atualizarCarrossel();
+        });
+
+        function seletor(tipo) {
+            const temTipo = document.body.classList.contains(tipo);
+
+            for (let i = 0; i <= 5; i++) {
+                document.body.classList.remove(String(i));
+            }
+
+            if (temTipo) {
+                document.body.classList.add('0');
+            } else {
+                document.body.classList.add(tipo);
+            }
+        }
+
+        fetch('db.json')
+            .then(response => response.json())
+            .then(food => {
+                console.log(food[0].name)
+
+                food.forEach(food => {
+                    console.log(food.name);
+                    // Cria o elemento principal
+                    const card = document.createElement('div');
+                    card.setAttribute('class', 'card_food');
+                    card.setAttribute('aria-label', `novo alimento`);
+                    card.setAttribute('tabindex', '0');
+
+                    // ---- div.type ----
+                    const divType = document.createElement('div');
+                    divType.setAttribute('class', 'type');
+                    divType.setAttribute('aria-label', `alimenta na categoria de ${food.type[0]}`);
+                    divType.setAttribute('tabindex', '0');
+
+                    const typeImg = document.createElement('img');
+
+                    typeImg.setAttribute('src', `./img/${food.type[0]}_type.png`);
+                    typeImg.setAttribute('alt', '');
+                    
+
+                    if (food.type[0] === 'prato principal') {
+                        divType.style.backgroundColor = '#8B4513';
+                    } else if (food.type[0] === 'lanche') {
+                        divType.style.backgroundColor = '#FFD700';
+                    } else if (food.type[0] === 'bebida') {
+                        divType.style.backgroundColor = '#3CB371';
+                    } else if (food.type[0] === 'sobremesa') {
+                        divType.style.backgroundColor = '#FFC0CB';
+                    } else if (food.type[0] === 'fruta') {
+                        divType.style.backgroundColor = '#FF8C00';
+                    }
+
+
+                    divType.appendChild(typeImg);
+
+                    // ---- div.img ----
+                    const divImg = document.createElement('div');
+                    divImg.setAttribute('class', 'img');
+                    divImg.setAttribute('aria-label', `imagem de ${food.name}`);
+                    divImg.setAttribute('tabindex', '0');
+
+                    const foodImg = document.createElement('img');
+                    foodImg.setAttribute('src', food.img);
+                    foodImg.setAttribute('alt', '');
+
+                    divImg.appendChild(foodImg);
+
+                    // ---- p.name ----
+                    const pName = document.createElement('p');
+                    pName.setAttribute('class', 'name');
+                    pName.textContent = food.name;
+                    pName.setAttribute('aria-label', `alimento: ${food.name}`);
+                    pName.setAttribute('tabindex', '0');
+
+                    // ---- div.row ----
+                    const divRow = document.createElement('div');
+                    divRow.setAttribute('class', 'row');
+
+                    const btnRecipe = document.createElement('button');
+                    btnRecipe.setAttribute('class', 'recipe');
+                    btnRecipe.setAttribute('target', '_blank');
+                    btnRecipe.setAttribute('aria-label', `ver receita de ${food.name}`);
+                    btnRecipe.setAttribute('tabindex', '0');
+                    btnRecipe.setAttribute('role', `button`);
+                    btnRecipe.textContent = 'receita';
+
+                    btnRecipe.addEventListener('click', () => {
+                        window.open(food.link, '_blank');
+                    });
+
+                    const pNote = document.createElement('p');
+                    pNote.setAttribute('class', 'note');
+                    pNote.textContent = food.note;
+                    btnRecipe.setAttribute('aria-label', `nota do alimento ${food.note}`);
+                    btnRecipe.setAttribute('tabindex', '0');
+
+                    divRow.appendChild(btnRecipe);
+                    divRow.appendChild(pNote);
+
+                    // ---- Montagem final ----
+                    card.appendChild(divType);
+                    card.appendChild(divImg);
+                    card.appendChild(pName);
+                    card.appendChild(divRow);
+
+                    // ---- Adiciona ao DOM ----
+
+                    document.querySelector('.foods').appendChild(card)
+
+                    const body = document.body;
+
+                    const observer = new MutationObserver(() => {
+                        if (body.classList.contains('0')) {
+                            document.querySelector('.foods').appendChild(card)
+                            card.style.display = 'flex'
+                        } else if (body.classList.contains('1')) {
+                            card.style.display = 'none'
+                            for (i = 0; i <= 4; i++) {
+                                if (food.type[i] === 'prato principal') {
+                                    document.querySelector('.foods').appendChild(card)
+                                    card.style.display = 'flex'
+                                }
+                            }
+
+                        } else if (body.classList.contains('2')) {
+                            card.style.display = 'none'
+                            for (i = 0; i <= 4; i++) {
+                                if (food.type[i] === 'lanche') {
+                                    document.querySelector('.foods').appendChild(card)
+                                    card.style.display = 'flex'
+                                }
+                            }
+
+                        } else if (body.classList.contains('3')) {
+                            card.style.display = 'none'
+                            for (i = 0; i <= 4; i++) {
+                                if (food.type[i] === 'bebida') {
+                                    document.querySelector('.foods').appendChild(card)
+                                    card.style.display = 'flex'
+                                }
+                            }
+
+                        } else if (body.classList.contains('4')) {
+                            card.style.display = 'none'
+                            for (i = 0; i <= 4; i++) {
+                                if (food.type[i] === 'sobremesa') {
+                                    document.querySelector('.foods').appendChild(card)
+                                    card.style.display = 'flex'
+                                }
+                            }
+
+                        } else if (body.classList.contains('5')) {
+                            card.style.display = 'none'
+                            for (i = 0; i <= 4; i++) {
+                                if (food.type[i] === 'fruta') {
+                                    document.querySelector('.foods').appendChild(card)
+                                    card.style.display = 'flex'
+                                }
+                            }
+
+                        }
+
+                    });
+
+                    observer.observe(body, { attributes: true, attributeFilter: ['class'] });
+
+
+
+                });
+
+            })
+    </script>
+</body>
+
+</html>

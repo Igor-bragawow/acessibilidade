@@ -1,0 +1,194 @@
+[
+    {
+        "name": "Pão de Queijo",
+        "desc": "Pequenos pães assados de queijo e polvilho, crocantes por fora e macios por dentro.",
+        "type": ["lanche"],
+        "note": "4.8",
+        "img": "./img/pao_de_queijo.jpg",
+        "link": "https://www.youtube.com/watch?v=MNaHH127RNs"
+    },
+    {
+        "name": "Açaí na Tigela",
+        "desc": "Polpa congelada do fruto do açaizeiro, servida como um creme com frutas e granola.",
+        "type": ["lanche", "sobremesa"],
+        "note": "4.5",
+        "img": "./img/acai_na_tigela.png",
+        "link": "https://www.youtube.com/watch?v=Neo9yQwjq9g"
+    },
+    {
+        "name": "Brigadeiro",
+        "desc": "Doce cremoso feito de leite condensado, cacau em pó e manteiga, coberto com granulado.",
+        "type": ["sobremesa"],
+        "note": "5.0",
+        "img": "./img/brigadeiro.jpg",
+        "link": "https://www.youtube.com/watch?v=rh-SlxmZdzQ"
+    },
+    {
+        "name": "Moqueca de Peixe",
+        "desc": "Ensopado de peixe cozido lentamente com leite de coco, azeite de dendê, pimentões e coentro.",
+        "type": ["prato principal"],
+        "note": "4.7",
+        "img": "./img/moqueca_de_peixe.jpg",
+        "link": "https://www.youtube.com/watch?v=7fzeJI96_S0"
+    },
+    {
+        "name": "Coxinha",
+        "desc": "Salgado frito em formato de coxa de galinha, recheado com frango desfiado e catupiry.",
+        "type": ["lanche"],
+        "note": "4.9",
+        "img": "./img/coxinha.jpg",
+        "link": "https://www.youtube.com/watch?v=JJS9x54pIgQ"
+    },
+    {
+        "name": "Pudim de Leite Condensado",
+        "desc": "Sobremesa clássica, cremosa e com calda de caramelo, feita com leite condensado.",
+        "type": ["sobremesa"],
+        "note": "4.6",
+        "img": "./img/pudim_de_leite.webp",
+        "link": "https://www.youtube.com/watch?v=GAxLcwSQW40"
+    },
+    {
+        "name": "Caipirinha",
+        "desc": "Coquetel nacional feito com cachaça, limão, açúcar e gelo.",
+        "type": ["bebida"],
+        "note": "4.4",
+        "img": "./img/caipirinha.jpg",
+        "link": "https://www.youtube.com/watch?v=2U0KIQjSLiA"
+    },
+    {
+        "name": "Quindim",
+        "desc": "Doce de origem portuguesa, feito com gemas de ovos, açúcar e coco ralado.",
+        "type": ["sobremesa"],
+        "note": "4.2",
+        "img": "./img/quindim.jpg",
+        "link": "https://www.youtube.com/watch?v=cmPKNKjRGk0"
+    },
+    {
+        "name": "Mandioca Frita",
+        "desc": "Aipim ou macaxeira frita, servida como petisco, crocante por fora e macia por dentro.",
+        "type": ["lanche"],
+        "note": "4.3",
+        "img": "./img/mandioca_frita.jpg",
+        "link": "https://www.youtube.com/watch?v=8cDGLx-TXZE"
+    },
+    {
+        "name": "Acarajé",
+        "desc": "Bolinho de feijão-fradinho frito no azeite de dendê, recheado com vatapá e camarão.",
+        "type": ["lanche"],
+        "note": "4.7",
+        "img": "./img/acaraje_completo.jpg",
+        "link": "https://www.youtube.com/watch?v=q2Nuoz4fSBo"
+    },
+    {
+        "name": "Tapioca",
+        "desc": "Feita com a goma da mandioca, pode ser recheada com ingredientes doces ou salgados.",
+        "type": ["lanche", "sobremesa"],
+        "note": "4.5",
+        "img": "./img/tapioca.jpg",
+        "link": "https://www.youtube.com/watch?v=Zpejs_HJweI"
+    },
+    {
+        "name": "Mousse de Maracujá",
+        "desc": "Sobremesa leve e refrescante feita com polpa de maracujá, leite condensado e creme de leite.",
+        "type": ["sobremesa"],
+        "note": "4.6",
+        "img": "./img/mousse_de_maracuja.jpg",
+        "link": "https://www.youtube.com/watch?v=oS11S-H43pw"
+    },
+    {
+        "name": "Pastel de Feira",
+        "desc": "Massa fina e crocante, frita na hora, com recheios variados (carne, queijo, palmito).",
+        "type": ["lanche"],
+        "note": "4.8",
+        "img": "./img/pastel.jpg",
+        "link": "https://www.youtube.com/watch?v=o3_9HW5eNgg"
+    },
+    {
+        "name": "Churrasco",
+        "desc": "Tradição gaúcha de carnes assadas na brasa, com diversos cortes e acompanhamentos.",
+        "type": ["prato principal"],
+        "note": "4.9",
+        "img": "./img/churrasco.jpg",
+        "link": "https://www.youtube.com/watch?v=0mT-mxaLL50"
+    },
+    {
+        "name": "Vatapá",
+        "desc": "Creme denso e temperado com pão, camarão, leite de coco, azeite de dendê e amendoim.",
+        "type": ["prato principal"],
+        "note": "4.1",
+        "img": "./img/vatapa.jpg",
+        "link": "https://www.youtube.com/watch?v=m0-AuwRZYf0"
+    },
+    {
+        "name": "Cocada",
+        "desc": "Doce de coco ralado e açúcar, podendo ser branca, morena ou cremosa.",
+        "type": ["sobremesa"],
+        "note": "4.4",
+        "img": "./img/cocada.jpg",
+        "link": "https://www.youtube.com/watch?v=tGa_DPuuy_U"
+    },
+    {
+        "name": "Bolinho de Chuva",
+        "desc": "Bolinhos fritos de massa macia, polvilhados com açúcar e canela.",
+        "type": ["lanche", "sobremesa"],
+        "note": "4.3",
+        "img": "./img/bolinho_de_chuva.jpg",
+        "link": "https://www.youtube.com/watch?v=37X0_WEdOHg"
+    },
+    {
+        "name": "Cuscuz Nordestino",
+        "desc": "Massa de flocão de milho cozida no vapor, servida com manteiga, ovos ou carne.",
+        "type": ["prato principal", "lanche"],
+        "note": "4.5",
+        "img": "./img/cuscuz_nordestino.jpg",
+        "link": "https://www.youtube.com/watch?v=hqdDAH8Suhw"
+    },
+    {
+        "name": "Doce de Leite",
+        "desc": "Creme espesso e caramelizado, feito com leite e açúcar, ideal para comer puro ou em sobremesas.",
+        "type": ["sobremesa"],
+        "note": "4.9",
+        "img": "./img/doce_de_leite.jpg",
+        "link": "https://www.youtube.com/watch?v=udffl9LanP8"
+    },
+    {
+        "name": "Pamonha",
+        "desc": "Massa de milho verde ralado, cozida e embrulhada na própria palha, pode ser doce ou salgada.",
+        "type": ["lanche", "sobremesa"],
+        "note": "4.6",
+        "img": "./img/pamonha.png",
+        "link": "https://www.youtube.com/watch?v=4Vu_GrPTRhU"
+    },
+    {
+        "name": "Guaraná Antarctica",
+        "desc": "Refrigerante brasileiro feito à base de extrato de semente de guaraná.",
+        "type": ["bebida"],
+        "note": "4.0",
+        "img": "./img/guarana_antarctica.jpg",
+        "link": "https://www.youtube.com/watch?v=2WM908JtKOc"
+    },
+    {
+        "name": "Cupuaçu",
+        "desc": "Fruta amazônica de polpa branca e ácida, usada em sucos, sorvetes e doces.",
+        "type": ["fruta"],
+        "note": "4.2",
+        "img": "./img/cupuacu.jpeg",
+        "link": "https://www.youtube.com/watch?v=C4h0MmYkiOU"
+    },
+    {
+        "name": "Jabuticaba",
+        "desc": "Pequena fruta preta e doce que cresce no tronco da árvore, consumida in natura ou em geleias.",
+        "type": ["fruta"],
+        "note": "4.1",
+        "img": "./img/jabuticaba.jpg",
+        "link": "https://www.youtube.com/watch?v=cScbtSVMgac"
+    },
+    {
+        "name": "Goiaba",
+        "desc": "Fruta tropical de polpa rosada ou branca, muito usada para fazer doces como a goiabada.",
+        "type": ["fruta"],
+        "note": "4.0",
+        "img": "./img/goiaba.webp",
+        "link": "https://www.youtube.com/watch?v=geA8An4cNA4"
+    }
+]
