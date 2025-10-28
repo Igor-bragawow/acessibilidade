@@ -1,192 +1,499 @@
 [
     {
         "name": "Pão de Queijo",
-        "desc": "Pequenos pães assados de queijo e polvilho, crocantes por fora e macios por dentro.",
-        "type": ["lanche"],
+        "id": "1",
+        "ingredients": [
+            "800 g de polvilho azedo",
+            "1 xícara de leite",
+            "2 ovos",
+            "sal a gosto",
+            "1 xícara de água",
+            "1/2 xícara de óleo",
+            "100 g de queijo parmesão ralado"
+        ],
+        "recipe": "Em uma panela, ferva a água e acrescente o leite, o óleo e o sal.Adicione o polvilho aos poucos até dar liga. Pode ser que você não precise usar os 800g, então coloque devagar e sove a massa até soltar da mão: esse é o ponto.Quando a massa estiver morna, acrescente o queijo parmesão, os ovos e misture bem.Unte as mãos e enrole bolinhas de 2 cm de diâmetro.Disponha as bolinhas em uma assadeira untada com óleo, deixando um espaço entre elas.Asse em forno médio (180º C), preaquecido, por cerca de 40 minutos.",
+        "dificulty": "fácil",
+        "tempo": "40 min",
+        "porcao": "30",
+        "type": [
+            "lanche"
+        ],
         "note": "4.8",
         "img": "./img/pao_de_queijo.jpg",
         "link": "https://www.youtube.com/watch?v=MNaHH127RNs"
     },
     {
         "name": "Açaí na Tigela",
-        "desc": "Polpa congelada do fruto do açaizeiro, servida como um creme com frutas e granola.",
-        "type": ["lanche", "sobremesa"],
+        "id": "1",
+        "ingredients": [
+            "400 g de polpa de açaí congelada",
+            "2 bananas médias",
+            "2 colheres de xarope de guaraná",
+            "Granola a gosto",
+            "Frutas variadas para decorar"
+        ],
+        "recipe": "Bata no liquidificador a polpa de açaí com as bananas e o xarope de guaraná até formar um creme homogêneo. Sirva em uma tigela e adicione granola e frutas por cima.",
+        "dificulty": "fácil",
+        "tempo": "10 min",
+        "porcao": "2",
+        "type": [
+            "lanche",
+            "sobremesa"
+        ],
         "note": "4.5",
         "img": "./img/acai_na_tigela.png",
         "link": "https://www.youtube.com/watch?v=Neo9yQwjq9g"
     },
     {
         "name": "Brigadeiro",
-        "desc": "Doce cremoso feito de leite condensado, cacau em pó e manteiga, coberto com granulado.",
-        "type": ["sobremesa"],
+        "id": "2",
+        "ingredients": [
+            "1 lata de leite condensado",
+            "2 colheres de cacau em pó",
+            "1 colher de sopa de manteiga",
+            "Chocolate granulado para enrolar"
+        ],
+        "recipe": "Em uma panela, misture o leite condensado, o cacau em pó e a manteiga. Cozinhe em fogo baixo mexendo até desgrudar do fundo. Deixe esfriar, enrole e passe no granulado.",
+        "dificulty": "fácil",
+        "tempo": "30 min",
+        "porcao": "25",
+        "type": [
+            "sobremesa"
+        ],
         "note": "5.0",
         "img": "./img/brigadeiro.jpg",
         "link": "https://www.youtube.com/watch?v=rh-SlxmZdzQ"
     },
     {
         "name": "Moqueca de Peixe",
-        "desc": "Ensopado de peixe cozido lentamente com leite de coco, azeite de dendê, pimentões e coentro.",
-        "type": ["prato principal"],
+        "id": "3",
+        "ingredients": [
+            "1 kg de postas de peixe branco",
+            "2 tomates",
+            "1 pimentão verde",
+            "1 pimentão vermelho",
+            "1 cebola",
+            "200 ml de leite de coco",
+            "2 colheres de azeite dendê",
+            "Coentro e sal a gosto"
+        ],
+        "recipe": "Em uma panela, intercale camadas de peixe, cebola, tomate e pimentão. Tempere com sal. Adicione o leite de coco e o azeite de dendê. Cozinhe em fogo médio por 20 minutos e finalize com coentro.",
+        "dificulty": "média",
+        "tempo": "40 min",
+        "porcao": "4",
+        "type": [
+            "prato principal"
+        ],
         "note": "4.7",
         "img": "./img/moqueca_de_peixe.jpg",
         "link": "https://www.youtube.com/watch?v=7fzeJI96_S0"
     },
     {
         "name": "Coxinha",
-        "desc": "Salgado frito em formato de coxa de galinha, recheado com frango desfiado e catupiry.",
-        "type": ["lanche"],
+        "id": "4",
+        "ingredients": [
+            "500 g de peito de frango desfiado",
+            "2 xícaras de caldo de galinha",
+            "2 xícaras de farinha de trigo",
+            "1 colher de sopa de manteiga",
+            "Sal a gosto",
+            "Requeijão cremoso",
+            "Farinha de rosca e óleo para fritar"
+        ],
+        "recipe": "Ferva o caldo com a manteiga e sal, adicione a farinha e mexa até formar uma massa firme. Recheie com frango e requeijão, modele em forma de coxinha, passe na farinha de rosca e frite até dourar.",
+        "dificulty": "média",
+        "tempo": "60 min",
+        "porcao": "20",
+        "type": [
+            "lanche"
+        ],
         "note": "4.9",
         "img": "./img/coxinha.jpg",
         "link": "https://www.youtube.com/watch?v=JJS9x54pIgQ"
     },
     {
         "name": "Pudim de Leite Condensado",
-        "desc": "Sobremesa clássica, cremosa e com calda de caramelo, feita com leite condensado.",
-        "type": ["sobremesa"],
+        "id": "5",
+        "ingredients": [
+            "1 lata de leite condensado",
+            "2 medidas da lata de leite",
+            "3 ovos",
+            "1 xícara de açúcar para a calda"
+        ],
+        "recipe": "Derreta o açúcar até formar uma calda e caramelize uma forma. Bata os outros ingredientes e despeje na forma. Asse em banho-maria a 180°C por cerca de 1 hora. Espere esfriar e desenforme.",
+        "dificulty": "fácil",
+        "tempo": "90 min",
+        "porcao": "8",
+        "type": [
+            "sobremesa"
+        ],
         "note": "4.6",
         "img": "./img/pudim_de_leite.webp",
         "link": "https://www.youtube.com/watch?v=GAxLcwSQW40"
     },
     {
         "name": "Caipirinha",
-        "desc": "Coquetel nacional feito com cachaça, limão, açúcar e gelo.",
-        "type": ["bebida"],
+        "id": "6",
+        "ingredients": [
+            "1 limão",
+            "2 colheres de sopa de açúcar",
+            "50 ml de cachaça",
+            "Gelo a gosto"
+        ],
+        "recipe": "Corte o limão em pedaços, coloque em um copo com o açúcar e amasse. Adicione a cachaça e o gelo, misture bem e sirva imediatamente.",
+        "dificulty": "fácil",
+        "tempo": "5 min",
+        "porcao": "1",
+        "type": [
+            "bebida"
+        ],
         "note": "4.4",
         "img": "./img/caipirinha.jpg",
         "link": "https://www.youtube.com/watch?v=2U0KIQjSLiA"
     },
     {
         "name": "Quindim",
-        "desc": "Doce de origem portuguesa, feito com gemas de ovos, açúcar e coco ralado.",
-        "type": ["sobremesa"],
+        "id": "7",
+        "ingredients": [
+            "6 gemas",
+            "1 xícara de coco ralado",
+            "1 xícara de açúcar",
+            "2 colheres de sopa de manteiga derretida"
+        ],
+        "recipe": "Misture todos os ingredientes até formar uma massa homogênea. Distribua em forminhas untadas e asse em banho-maria a 180°C por cerca de 40 minutos.",
+        "dificulty": "fácil",
+        "tempo": "50 min",
+        "porcao": "10",
+        "type": [
+            "sobremesa"
+        ],
         "note": "4.2",
         "img": "./img/quindim.jpg",
         "link": "https://www.youtube.com/watch?v=cmPKNKjRGk0"
     },
     {
         "name": "Mandioca Frita",
-        "desc": "Aipim ou macaxeira frita, servida como petisco, crocante por fora e macia por dentro.",
-        "type": ["lanche"],
+        "id": "8",
+        "ingredients": [
+            "500 g de mandioca descascada",
+            "Sal a gosto",
+            "Óleo para fritar"
+        ],
+        "recipe": "Corte a mandioca em pedaços e cozinhe até ficar macia. Escorra, corte em tiras e frite em óleo quente até dourar. Tempere com sal e sirva quente.",
+        "dificulty": "fácil",
+        "tempo": "25 min",
+        "porcao": "4",
+        "type": [
+            "lanche"
+        ],
         "note": "4.3",
         "img": "./img/mandioca_frita.jpg",
         "link": "https://www.youtube.com/watch?v=8cDGLx-TXZE"
     },
     {
         "name": "Acarajé",
-        "desc": "Bolinho de feijão-fradinho frito no azeite de dendê, recheado com vatapá e camarão.",
-        "type": ["lanche"],
+        "id": "9",
+        "ingredients": [
+            "500 g de feijão-fradinho",
+            "1 cebola",
+            "Sal a gosto",
+            "Azeite de dendê para fritar",
+            "Vatapá e camarão seco para rechear"
+        ],
+        "recipe": "Deixe o feijão de molho e retire as cascas. Bata com a cebola e o sal até formar uma massa. Modele bolinhos e frite no dendê. Corte ao meio e recheie com vatapá e camarão.",
+        "dificulty": "difícil",
+        "tempo": "90 min",
+        "porcao": "10",
+        "type": [
+            "lanche"
+        ],
         "note": "4.7",
         "img": "./img/acaraje_completo.jpg",
         "link": "https://www.youtube.com/watch?v=q2Nuoz4fSBo"
     },
     {
         "name": "Tapioca",
-        "desc": "Feita com a goma da mandioca, pode ser recheada com ingredientes doces ou salgados.",
-        "type": ["lanche", "sobremesa"],
+        "id": "10",
+        "ingredients": [
+            "1 xícara de goma de tapioca hidratada",
+            "Recheio doce ou salgado a gosto"
+        ],
+        "recipe": "Aqueça uma frigideira e espalhe a goma uniformemente até formar uma panqueca. Cozinhe por 1 a 2 minutos de cada lado e adicione o recheio de sua preferência.",
+        "dificulty": "fácil",
+        "tempo": "10 min",
+        "porcao": "1",
+        "type": [
+            "lanche",
+            "sobremesa"
+        ],
         "note": "4.5",
         "img": "./img/tapioca.jpg",
         "link": "https://www.youtube.com/watch?v=Zpejs_HJweI"
     },
     {
         "name": "Mousse de Maracujá",
-        "desc": "Sobremesa leve e refrescante feita com polpa de maracujá, leite condensado e creme de leite.",
-        "type": ["sobremesa"],
+        "id": "11",
+        "ingredients": [
+            "1 lata de leite condensado",
+            "1 lata de creme de leite",
+            "1 xícara de suco de maracujá concentrado"
+        ],
+        "recipe": "Bata todos os ingredientes no liquidificador até ficar homogêneo. Coloque em taças e leve à geladeira por pelo menos 2 horas antes de servir.",
+        "dificulty": "fácil",
+        "tempo": "10 min + 2h geladeira",
+        "porcao": "6",
+        "type": [
+            "sobremesa"
+        ],
         "note": "4.6",
         "img": "./img/mousse_de_maracuja.jpg",
         "link": "https://www.youtube.com/watch?v=oS11S-H43pw"
     },
     {
         "name": "Pastel de Feira",
-        "desc": "Massa fina e crocante, frita na hora, com recheios variados (carne, queijo, palmito).",
-        "type": ["lanche"],
+        "id": "12",
+        "ingredients": [
+            "1 pacote de massa para pastel",
+            "Recheio a gosto (carne, queijo, palmito)",
+            "Óleo para fritar"
+        ],
+        "recipe": "Abra a massa, coloque o recheio, feche bem as bordas e frite em óleo quente até dourar. Escorra e sirva em seguida.",
+        "dificulty": "fácil",
+        "tempo": "20 min",
+        "porcao": "10",
+        "type": [
+            "lanche"
+        ],
         "note": "4.8",
         "img": "./img/pastel.jpg",
         "link": "https://www.youtube.com/watch?v=o3_9HW5eNgg"
     },
     {
         "name": "Churrasco",
-        "desc": "Tradição gaúcha de carnes assadas na brasa, com diversos cortes e acompanhamentos.",
-        "type": ["prato principal"],
+        "id": "13",
+        "ingredients": [
+            "1,5 kg de carne (picanha, alcatra ou fraldinha)",
+            "Sal grosso a gosto",
+            "Farofa e vinagrete para acompanhar"
+        ],
+        "recipe": "Tempere a carne com sal grosso e asse em uma churrasqueira com brasa média, virando ocasionalmente até atingir o ponto desejado. Sirva com farofa e vinagrete.",
+        "dificulty": "média",
+        "tempo": "60 min",
+        "porcao": "6",
+        "type": [
+            "prato principal"
+        ],
         "note": "4.9",
         "img": "./img/churrasco.jpg",
         "link": "https://www.youtube.com/watch?v=0mT-mxaLL50"
     },
     {
         "name": "Vatapá",
-        "desc": "Creme denso e temperado com pão, camarão, leite de coco, azeite de dendê e amendoim.",
-        "type": ["prato principal"],
+        "id": "14",
+        "ingredients": [
+            "3 pães franceses amanhecidos",
+            "200 ml de leite de coco",
+            "100 g de camarão seco",
+            "2 colheres de sopa de azeite de dendê",
+            "Amendoim torrado e moído",
+            "Castanha de caju moída",
+            "1 cebola",
+            "1 tomate",
+            "Coentro e sal a gosto"
+        ],
+        "recipe": "Bata no liquidificador os pães com o leite de coco, tomate e cebola. Transfira para uma panela, adicione o dendê, amendoim, castanha e camarão. Cozinhe em fogo baixo até engrossar. Ajuste o sal e finalize com coentro.",
+        "dificulty": "difícil",
+        "tempo": "80 min",
+        "porcao": "6",
+        "type": [
+            "prato principal"
+        ],
         "note": "4.1",
         "img": "./img/vatapa.jpg",
         "link": "https://www.youtube.com/watch?v=m0-AuwRZYf0"
     },
     {
         "name": "Cocada",
-        "desc": "Doce de coco ralado e açúcar, podendo ser branca, morena ou cremosa.",
-        "type": ["sobremesa"],
+        "id": "15",
+        "ingredients": [
+            "2 xícaras de coco ralado fresco",
+            "1 e 1/2 xícara de açúcar",
+            "1/2 xícara de água",
+            "1 pitada de sal"
+        ],
+        "recipe": "Em uma panela, misture o açúcar e a água e leve ao fogo até formar uma calda em ponto de fio. Adicione o coco e o sal, mexendo até desgrudar do fundo. Coloque em uma superfície untada e deixe esfriar.",
+        "dificulty": "fácil",
+        "tempo": "30 min",
+        "porcao": "12",
+        "type": [
+            "sobremesa"
+        ],
         "note": "4.4",
         "img": "./img/cocada.jpg",
         "link": "https://www.youtube.com/watch?v=tGa_DPuuy_U"
     },
     {
         "name": "Bolinho de Chuva",
-        "desc": "Bolinhos fritos de massa macia, polvilhados com açúcar e canela.",
-        "type": ["lanche", "sobremesa"],
+        "id": "16",
+        "ingredients": [
+            "2 ovos",
+            "1 xícara de açúcar",
+            "2 xícaras de farinha de trigo",
+            "1 colher de sopa de fermento",
+            "1/2 xícara de leite",
+            "Açúcar e canela para polvilhar",
+            "Óleo para fritar"
+        ],
+        "recipe": "Misture os ovos, o açúcar, o leite e a farinha até formar uma massa cremosa. Adicione o fermento. Frite colheradas da massa em óleo quente até dourar. Escorra e polvilhe com açúcar e canela.",
+        "dificulty": "fácil",
+        "tempo": "30 min",
+        "porcao": "20",
+        "type": [
+            "lanche",
+            "sobremesa"
+        ],
         "note": "4.3",
         "img": "./img/bolinho_de_chuva.jpg",
         "link": "https://www.youtube.com/watch?v=37X0_WEdOHg"
     },
     {
         "name": "Cuscuz Nordestino",
-        "desc": "Massa de flocão de milho cozida no vapor, servida com manteiga, ovos ou carne.",
-        "type": ["prato principal", "lanche"],
+        "id": "17",
+        "ingredients": [
+            "2 xícaras de flocão de milho",
+            "1 xícara de água",
+            "1/2 colher de chá de sal",
+            "Manteiga a gosto"
+        ],
+        "recipe": "Misture o flocão, a água e o sal e deixe hidratar por 10 minutos. Coloque na cuscuzeira e cozinhe no vapor por 10 a 15 minutos. Sirva com manteiga derretida.",
+        "dificulty": "fácil",
+        "tempo": "25 min",
+        "porcao": "4",
+        "type": [
+            "prato principal",
+            "lanche"
+        ],
         "note": "4.5",
         "img": "./img/cuscuz_nordestino.jpg",
         "link": "https://www.youtube.com/watch?v=hqdDAH8Suhw"
     },
     {
         "name": "Doce de Leite",
-        "desc": "Creme espesso e caramelizado, feito com leite e açúcar, ideal para comer puro ou em sobremesas.",
-        "type": ["sobremesa"],
+        "id": "18",
+        "ingredients": [
+            "1 litro de leite",
+            "2 xícaras de açúcar",
+            "1 pitada de bicarbonato de sódio"
+        ],
+        "recipe": "Em uma panela alta, misture o leite, o açúcar e o bicarbonato. Cozinhe em fogo médio, mexendo sempre, até engrossar e adquirir cor caramelizada. Deixe esfriar antes de servir.",
+        "dificulty": "média",
+        "tempo": "90 min",
+        "porcao": "10",
+        "type": [
+            "sobremesa"
+        ],
         "note": "4.9",
         "img": "./img/doce_de_leite.jpg",
         "link": "https://www.youtube.com/watch?v=udffl9LanP8"
     },
     {
         "name": "Pamonha",
-        "desc": "Massa de milho verde ralado, cozida e embrulhada na própria palha, pode ser doce ou salgada.",
-        "type": ["lanche", "sobremesa"],
+        "id": "19",
+        "ingredients": [
+            "6 espigas de milho verde",
+            "1 xícara de açúcar",
+            "1 pitada de sal",
+            "1/2 xícara de leite",
+            "Palhas de milho para embrulhar"
+        ],
+        "recipe": "Rale o milho e misture com o açúcar, sal e leite. Coloque a massa nas palhas de milho e feche bem. Cozinhe em água fervente por cerca de 40 minutos. Sirva quente ou fria.",
+        "dificulty": "média",
+        "tempo": "60 min",
+        "porcao": "10",
+        "type": [
+            "lanche",
+            "sobremesa"
+        ],
         "note": "4.6",
         "img": "./img/pamonha.png",
         "link": "https://www.youtube.com/watch?v=4Vu_GrPTRhU"
     },
     {
-        "name": "Guaraná Antarctica",
-        "desc": "Refrigerante brasileiro feito à base de extrato de semente de guaraná.",
-        "type": ["bebida"],
+        "name": "Doce de jenipapo",
+        "id": "20",
+        "ingredients": [
+            "1 kg de Jenipapo",
+            "600 g de açúcar cristal",
+            "2 xícaras (chá) de água"
+        ],
+        "recipe": "Descasque os jenipapos e corte-os em rodelas grossas ou cubos médios.Leve os pedaços para uma panela grande com o açúcar e a água.Cozinhe em fogo baixo, mexendo de vez em quando, até que o açúcar se dissolva completamente e comece a engrossar.Adicione canela e cravos, se quiser dar um toque aromático.Continue cozinhando por cerca de 40 a 50 minutos, até que o doce fique com uma calda espessa e brilhante e os pedaços de jenipapo estejam macios.Retire as especiarias e deixe esfriar completamente e sirva-se",
+        "dificulty": "média",
+        "tempo": "1 hora",
+        "porcao": "10",
+        "type": [
+            "fruta"
+        ],
         "note": "4.0",
-        "img": "./img/guarana_antarctica.jpg",
+        "img": "./img/jenipapo.jpg",
         "link": "https://www.youtube.com/watch?v=2WM908JtKOc"
     },
     {
-        "name": "Cupuaçu",
-        "desc": "Fruta amazônica de polpa branca e ácida, usada em sucos, sorvetes e doces.",
-        "type": ["fruta"],
+        "name": "Sorvete de Cupuaçu",
+        "id": "21",
+        "ingredients": [
+            "2 xícaras de polpa de cupuaçu",
+            "1 lata de leite condensado",
+            "1 lata de creme de leite",
+            "1/2 xícara de açúcar"
+        ],
+        "recipe": "Bata todos os ingredientes no liquidificador até ficar homogêneo. Coloque em um recipiente e leve ao congelador por 2 horas. Retire, bata novamente e congele por mais 4 horas antes de servir.",
+        "dificulty": "fácil",
+        "tempo": "6 h (com congelamento)",
+        "porcao": "8",
+        "type": [
+            "fruta",
+            "sobremesa"
+        ],
         "note": "4.2",
         "img": "./img/cupuacu.jpeg",
-        "link": "https://www.youtube.com/watch?v=C4h0MmYkiOU"
+        "link": "https://www.youtube.com/watch?v=HcE9EIGHFTs"
     },
     {
-        "name": "Jabuticaba",
-        "desc": "Pequena fruta preta e doce que cresce no tronco da árvore, consumida in natura ou em geleias.",
-        "type": ["fruta"],
+        "name": "Geleia de Jabuticaba",
+        "id": "22",
+        "ingredients": [
+            "1 kg de jabuticabas maduras",
+            "500 g de açúcar",
+            "1/2 xícara de água"
+        ],
+        "recipe": "Lave as jabuticabas e coloque-as em uma panela com água. Cozinhe até que estourem. Passe por uma peneira, volte o líquido ao fogo e adicione o açúcar. Cozinhe até atingir ponto de geleia. Guarde em potes esterilizados.",
+        "dificulty": "média",
+        "tempo": "90 min",
+        "porcao": "5 potes",
+        "type": [
+            "fruta",
+            "sobremesa"
+        ],
         "note": "4.1",
         "img": "./img/jabuticaba.jpg",
-        "link": "https://www.youtube.com/watch?v=cScbtSVMgac"
+        "link": "https://www.youtube.com/watch?v=w_XnfkB9NrU"
     },
     {
-        "name": "Goiaba",
-        "desc": "Fruta tropical de polpa rosada ou branca, muito usada para fazer doces como a goiabada.",
-        "type": ["fruta"],
+        "name": "Goiabada",
+        "id": "23",
+        "ingredients": [
+            "1 kg de goiabas maduras",
+            "800 g de açúcar",
+            "Suco de 1 limão"
+        ],
+        "recipe": "Corte as goiabas e bata no liquidificador. Peneire e leve a polpa ao fogo com o açúcar e o limão. Cozinhe, mexendo até engrossar e soltar do fundo da panela. Coloque em potes e deixe esfriar.",
+        "dificulty": "média",
+        "tempo": "90 min",
+        "porcao": "8",
+        "type": [
+            "fruta",
+            "sobremesa"
+        ],
         "note": "4.0",
         "img": "./img/goiaba.webp",
         "link": "https://www.youtube.com/watch?v=geA8An4cNA4"
