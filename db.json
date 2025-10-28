@@ -198,7 +198,7 @@
             "1 cebola",
             "Sal a gosto",
             "Azeite de dendê para fritar",
-            "Vatapá e camarão seco para rechear"
+            "Vatapá e camarão seco"
         ],
         "recipe": "Deixe o feijão de molho e retire as cascas. Bata com a cebola e o sal até formar uma massa. Modele bolinhos e frite no dendê. Corte ao meio e recheie com vatapá e camarão.",
         "dificulty": "difícil",
@@ -294,7 +294,7 @@
             "3 pães franceses amanhecidos",
             "200 ml de leite de coco",
             "100 g de camarão seco",
-            "2 colheres de sopa de azeite de dendê",
+            "2 colheres de azeite de dendê",
             "Amendoim torrado e moído",
             "Castanha de caju moída",
             "1 cebola",
@@ -499,3 +499,4 @@
         "link": "https://www.youtube.com/watch?v=geA8An4cNA4"
     }
 ]
+
