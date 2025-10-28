@@ -236,7 +236,7 @@
         "ingredients": [
             "1 lata de leite condensado",
             "1 lata de creme de leite",
-            "1 xícara de suco de maracujá concentrado"
+            "1 xícara de maracujá concentrado"
         ],
         "recipe": "Bata todos os ingredientes no liquidificador até ficar homogêneo. Coloque em taças e leve à geladeira por pelo menos 2 horas antes de servir.",
         "dificulty": "fácil",
@@ -254,7 +254,7 @@
         "id": "12",
         "ingredients": [
             "1 pacote de massa para pastel",
-            "Recheio a gosto (carne, queijo, palmito)",
+            "Recheio a gosto(carne, queijo)",
             "Óleo para fritar"
         ],
         "recipe": "Abra a massa, coloque o recheio, feche bem as bordas e frite em óleo quente até dourar. Escorra e sirva em seguida.",
@@ -316,7 +316,7 @@
         "name": "Cocada",
         "id": "15",
         "ingredients": [
-            "2 xícaras de coco ralado fresco",
+            "2 xícaras de coco ralado",
             "1 e 1/2 xícara de açúcar",
             "1/2 xícara de água",
             "1 pitada de sal"
@@ -383,7 +383,7 @@
         "ingredients": [
             "1 litro de leite",
             "2 xícaras de açúcar",
-            "1 pitada de bicarbonato de sódio"
+            "1 colher bicarbonato de sódio"
         ],
         "recipe": "Em uma panela alta, misture o leite, o açúcar e o bicarbonato. Cozinhe em fogo médio, mexendo sempre, até engrossar e adquirir cor caramelizada. Deixe esfriar antes de servir.",
         "dificulty": "média",
@@ -499,4 +499,5 @@
         "link": "https://www.youtube.com/watch?v=geA8An4cNA4"
     }
 ]
+
 
