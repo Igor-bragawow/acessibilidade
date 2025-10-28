@@ -11,80 +11,163 @@
 
 <body class="0">
     <section class="content" role="region" aria-label="Seção principal sobre culinária brasileira">
-    <div class="container" role="region" aria-label="Carrossel de imagens de comidas brasileiras">
-        <div class="back" aria-hidden="true"></div>
-        <div class="ball" aria-hidden="true"></div>
-        <div class="ball2" aria-hidden="true"></div>
+        <div class="container" id="container" role="region" aria-label="Carrossel de imagens de comidas brasileiras">
+            <div class="back" aria-hidden="true"></div>
+            <div class="ball" aria-hidden="true"></div>
+            <div class="ball2" aria-hidden="true"></div>
 
-        <div class="cont-img" role="img" aria-label="Imagem ilustrando prato típico brasileiro">
-            <img src="" alt="" class="img_container">
-        </div>
+            <div class="cont-img" role="img" aria-label="Imagem ilustrando prato típico brasileiro">
+                <img src="" alt="" class="img_container">
+            </div>
 
-        <div class="cont-info" role="group" aria-label="Informações do carrossel e controles de navegação">
-            <h1 tabindex="0">Lorem Epsum it</h1>
+            <div class="cont-info" role="group" aria-label="Informações do carrossel e controles de navegação">
+                <h1 tabindex="0" class="title">Lorem Epsum it</h1>
 
-            <div class="buttons" role="group" aria-label="Botões de navegação do carrossel">
-                <button class="but" aria-label="Imagem anterior">&#60</button>
-                <button class="but" aria-label="Próxima imagem">&#62</button>
+                <div class="buttons" role="group" aria-label="Botões de navegação do carrossel">
+                    <button class="but" aria-label="Imagem anterior">&#60</button>
+                    <button class="but" aria-label="Próxima imagem">&#62</button>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="types" role="region" aria-label="Categorias de comidas brasileiras">
-        <button class="card_type" onclick="seletor(1)" role="button" tabindex="0" aria-label="Selecionar categoria pratos principais">
-            <div class="card_img_div" role="img" aria-label="Imagem de prato principal brasileiro">
-                <img src="img/feijoada_types.png" alt="" class="card_img">
-            </div>
-            <p>PRINCIPAL</p>
-        </button>
+        <div class="types" role="region" aria-label="Categorias de comidas brasileiras">
+            <button class="card_type" onclick="seletor(1)" role="button" tabindex="0"
+                aria-label="Selecionar categoria pratos principais">
+                <div class="card_img_div" role="img" aria-label="Imagem de prato principal brasileiro">
+                    <img src="img/feijoada_types.png" alt="" class="card_img">
+                </div>
+                <p>PRINCIPAL</p>
+            </button>
 
-        <button class="card_type" onclick="seletor(2)" role="button" tabindex="0" aria-label="Selecionar categoria lanches">
-            <div class="card_img_div" role="img" aria-label="Imagem de lanche típico brasileiro">
-                <img src="img/coxinha_types.png" alt="" class="card_img">
-            </div>
-            <p>LANCHES</p>
-        </button>
+            <button class="card_type" onclick="seletor(2)" role="button" tabindex="0"
+                aria-label="Selecionar categoria lanches">
+                <div class="card_img_div" role="img" aria-label="Imagem de lanche típico brasileiro">
+                    <img src="img/coxinha_types.png" alt="" class="card_img">
+                </div>
+                <p>LANCHES</p>
+            </button>
 
-        <button class="card_type" onclick="seletor(3)" role="button" tabindex="0" aria-label="Selecionar categoria bebidas">
-            <div class="card_img_div" role="img" aria-label="Imagem de bebida típica brasileira">
-                <img src="img/cana_types.png" alt="" class="card_img">
-            </div>
-            <p>BEBIDAS</p>
-        </button>
+            <button class="card_type" onclick="seletor(3)" role="button" tabindex="0"
+                aria-label="Selecionar categoria bebidas">
+                <div class="card_img_div" role="img" aria-label="Imagem de bebida típica brasileira">
+                    <img src="img/cana_types.png" alt="" class="card_img">
+                </div>
+                <p>BEBIDAS</p>
+            </button>
 
-        <button class="card_type" onclick="seletor(4)" role="button" tabindex="0" aria-label="Selecionar categoria sobremesas">
-            <div class="card_img_div" role="img" aria-label="Imagem de sobremesa brasileira">
-                <img src="img/acai_types.png" alt="" class="card_img">
-            </div>
-            <p>SOBREMESA</p>
-        </button>
+            <button class="card_type" onclick="seletor(4)" role="button" tabindex="0"
+                aria-label="Selecionar categoria sobremesas">
+                <div class="card_img_div" role="img" aria-label="Imagem de sobremesa brasileira">
+                    <img src="img/acai_types.png" alt="" class="card_img">
+                </div>
+                <p>SOBREMESA</p>
+            </button>
 
-        <button class="card_type" onclick="seletor(5)" role="button" tabindex="0" aria-label="Selecionar categoria frutas">
-            <div class="card_img_div" role="img" aria-label="Imagem de fruta típica brasileira">
-                <img src="img/caju_types.png" alt="" class="card_img">
-            </div>
-            <p>FRUTAS</p>
-        </button>
-    </div>
-
-    <div class="mini-container" role="region" aria-label="Imagens complementares de comidas brasileiras">
-        <div class="mini_1" role="img" tabindex="0" aria-label="Imagem adicional de prato brasileiro">
-            <div class="back2" aria-hidden="true"></div>
-            <div class="ball3" aria-hidden="true"></div>
-            <img src="" alt="">
+            <button class="card_type" onclick="seletor(5)" role="button" tabindex="0"
+                aria-label="Selecionar categoria frutas">
+                <div class="card_img_div" role="img" aria-label="Imagem de fruta típica brasileira">
+                    <img src="img/caju_types.png" alt="" class="card_img">
+                </div>
+                <p>FRUTAS</p>
+            </button>
         </div>
-        <div class="mini_2" role="img" tabindex="0" aria-label="Imagem adicional de bebida brasileira">
-            <div class="back2" aria-hidden="true"></div>
-            <div class="ball4" aria-hidden="true"></div>
-            <img src="" alt="">
-        </div>
-    </div>
 
-    <div class="foods" role="region" aria-label="Lista de comidas exibidas conforme a categoria selecionada">
-    </div>
-</section>
+        <div class="mini-container" role="region" aria-label="Imagens complementares de comidas brasileiras">
+            <div class="mini_1" role="img" tabindex="0" aria-label="Imagem adicional de prato brasileiro">
+                <div class="back2" aria-hidden="true"></div>
+                <div class="ball3" aria-hidden="true"></div>
+                <img src="" alt="">
+            </div>
+            <div class="mini_2" role="img" tabindex="0" aria-label="Imagem adicional de bebida brasileira">
+                <div class="back2" aria-hidden="true"></div>
+                <div class="ball4" aria-hidden="true"></div>
+                <img src="" alt="">
+            </div>
+        </div>
+
+        <div class="foods" role="region" aria-label="Lista de comidas exibidas conforme a categoria selecionada">
+        </div>
+
+        <div class="infos" style="display: none;" role="region" tabindex="0" aria-label="Tela de receita Aberta">
+            <div class="column1">
+                <div class="img" id="img_inf" role="region" tabindex="0" aria-label="imagem do alimento">
+
+                </div>
+                <div class="ingredients">
+                    <h3 role="region" tabindex="0" aria-label="ingredientes">Ingredientes</h3>
+                    <ul id="ing">
+
+                    </ul>
+                </div>
+            </div>
+            <div class="column2">
+                <div class="inf">
+                    <div class="inf_dif">
+                        <p>Dificuldade</p>
+                        <p id="dif"></p>
+                    </div>
+                    <div class="inf_por">
+                        <p>Porções</p>
+                        <p id="por"></p>
+                    </div>
+                    <div class="inf_tem">
+                        <p>Tempo</p>
+                        <p id="tem"></p>
+                    </div>
+                </div>
+                <div class="recipe">
+                    <h3 role="region" tabindex="0" aria-label="Modo de preparo">Modo de Preparo</h3>
+                    <p id="rec">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+                        incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="buttons">
+                    <button id="rec_b" role="region" tabindex="0" aria-label="botão para ver receita no youtube">Ver
+                        Receita Completa</button>
+                    <button id="vol_b" role="region" tabindex="0"
+                        aria-label="botão para sair da tela de receita">Voltar</button>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-section">
+                <h3 role="region" tabindex="0" aria-label="mapa do site">Mapa do site</h3>
+                <ul>
+                    <li><a href="#container" role="region" tabindex="0"
+                            aria-label="voltar para carroussel">carrossel</a></li>
+                    <li><a href="#type" role="region" tabindex="0" aria-label="voltar para categorias">categorias</a>
+                    </li>
+                    <li><a href="#food" role="region" tabindex="0" aria-label="voltar para alimentos">alimentos</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 role="region" tabindex="0" aria-label="lista de seletores de categoria">categorias</h3>
+                <ul>
+                    <li onclick="seletor(1)" role="button" tabindex="0"
+                        aria-label="Selecionar categoria pratos pricipais">principal</li>
+                    <li onclick="seletor(2)" role="button" tabindex="0" aria-label="Selecionar categoria lanches">lanche
+                    </li>
+                    <li onclick="seletor(3)" role="button" tabindex="0" aria-label="Selecionar categoria bebidas">
+                        bebidas</li>
+                    <li onclick="seletor(4)" role="button" tabindex="0" aria-label="Selecionar categoria sobremesas">
+                        sobremesa</li>
+                    <li onclick="seletor(5)" role="button" tabindex="0" aria-label="Selecionar categoria frutas">frutas
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <h3 onclick="window.open('https://www.linkedin.com/in/igor-braga-58b46a356/', '_blank')" role="region"
+                    tabindex="0" aria-label="Link para ir para o likedin do criador do site">© 2025 | Igor Delfino Braga
+                </h3>
+            </div>
+        </footer>
+    </section>
 
     <script>
+        const infos = document.querySelector('.infos')
         document.addEventListener('DOMContentLoaded', () => {
             const alimentosCarrossel = [
                 {
@@ -224,6 +307,7 @@
             }
         }
 
+
         fetch('db.json')
             .then(response => response.json())
             .then(food => {
@@ -247,7 +331,7 @@
 
                     typeImg.setAttribute('src', `./img/${food.type[0]}_type.png`);
                     typeImg.setAttribute('alt', '');
-                    
+
 
                     if (food.type[0] === 'prato principal') {
                         divType.style.backgroundColor = '#8B4513';
@@ -295,8 +379,64 @@
                     btnRecipe.setAttribute('role', `button`);
                     btnRecipe.textContent = 'receita';
 
+
+
                     btnRecipe.addEventListener('click', () => {
-                        window.open(food.link, '_blank');
+                        // window.open(food.link, '_blank');
+
+                        const img_inf = document.querySelector('#img_inf')
+                        const ing = document.querySelector('#ing')
+                        const dif = document.querySelector('#dif')
+                        const por = document.querySelector('#por')
+                        const tem = document.querySelector('#tem')
+                        const rec = document.querySelector('#rec')
+                        const rec_b = document.querySelector('#rec_b')
+                        const vol_b = document.querySelector('#vol_b')
+
+
+
+                        infos.style.display = 'flex'
+                        infos.focus();
+
+                        img_inf.style.backgroundImage = `url(${food.img})`
+
+                        ing.innerHTML = ''
+                        for (i = 0; i < food.ingredients.length; i++) {
+
+                            li = document.createElement('li')
+                            li.textContent = food.ingredients[i]
+                            li.setAttribute('aria-label', `${food.ingredients}`);
+                            li.setAttribute('tabindex', '0');
+                            li.setAttribute('role', `button`);
+
+                            ing.appendChild(li)
+                        }
+
+                        dif.textContent = food.dificulty
+                        tem.textContent = food.tempo
+                        por.textContent = food.porcao
+
+                        dif.setAttribute('aria-label', `nivel de dificuldade: ${food.dificulty}`);
+                        dif.setAttribute('tabindex', '0');
+                        dif.setAttribute('role', `button`);
+                        por.setAttribute('aria-label', `numero de porções: ${food.tempo}`);
+                        por.setAttribute('tabindex', '0');
+                        por.setAttribute('role', `button`);
+                        tem.setAttribute('aria-label', `tempo estimado: ${food.porcao}`);
+                        tem.setAttribute('tabindex', '0');
+                        tem.setAttribute('role', `button`);
+
+                        rec.textContent = food.recipe
+
+                        
+
+                        rec.setAttribute('aria-label', `${food.recipe}`);
+                        rec.setAttribute('tabindex', '0');
+                        rec.setAttribute('role', `button`);
+
+                        rec_b.setAttribute('onclick', `window.open('${food.link}', '_blank');`)
+                        vol_b.setAttribute('onclick', 'infos.style.display = "none"; document.querySelector(".mini_2").focus()')
+
                     });
 
                     const pNote = document.createElement('p');
